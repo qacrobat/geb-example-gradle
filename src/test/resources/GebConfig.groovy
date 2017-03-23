@@ -33,6 +33,8 @@ environments {
 
 }
 
+reportsDir = new File("target/geb-reports")
+
 // To run the tests with all browsers just run “./gradlew test”
 
 baseUrl = "http://gebish.org"
