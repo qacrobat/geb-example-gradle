@@ -8,7 +8,7 @@ import geb.Page
 class TheInternetPage extends Page {
 
     static url = "http://the-internet.herokuapp.com/"
-    static at = {title =~ "The Internet"}
+    static at = {title.contains("The Internet")}
     static content = {
         // links on the startpage
         formAuthenticationLink {$('a', text:'Form Authentication')}
